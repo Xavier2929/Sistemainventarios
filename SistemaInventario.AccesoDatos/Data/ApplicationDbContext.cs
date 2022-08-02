@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SistemaInventario.Modelos;
 
 namespace sistemaInventariov6.AccesoDatos.Data
 {
@@ -9,5 +10,7 @@ namespace sistemaInventariov6.AccesoDatos.Data
             : base(options)
         {
         }
+
+        public DbSet<Bodega> Bodegas { get; set; }
     }
 }
